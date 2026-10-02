@@ -1,0 +1,7 @@
+# Robots.txt for Lancerstudio Engineering Solutions
+User-agent: *
+Allow: /
+
+# Host & Sitemap location
+Host: https://www.lancersstudio.com
+Sitemap: https://www.lancersstudio.com/sitemap.xml

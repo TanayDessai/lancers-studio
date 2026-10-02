@@ -1,0 +1,21 @@
+{
+  "name": "Lancerstudio Engineering Solutions",
+  "short_name": "Lancerstudio",
+  "description": "Mumbai-based facade engineering, shop drawings, detailing, and BIM solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0f12",
+  "theme_color": "#0d0f12",
+  "icons": [
+    {
+      "src": "/assets/mark-ink.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/mark-ink.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
