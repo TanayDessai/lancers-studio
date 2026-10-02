@@ -37,6 +37,8 @@ pnpm-debug.log*
 *.tmp
 *.bak
 *.orig
+bun.lock
+bun.lockb
 
 # Local tooling caches
 .cache/
