@@ -39,7 +39,7 @@ export default function ClosingCTA({ content }) {
         </Reveal>
         <Reveal variant="rise" duration={1.2} className={styles.buttons}>
           {content.buttons.map((button) => (
-            <a key={button.label} className="btn" href={button.href}>
+            <a key={button.label} className={styles.button} href={button.href}>
               {button.label}
             </a>
           ))}

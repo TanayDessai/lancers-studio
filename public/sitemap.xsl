@@ -7,7 +7,7 @@
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
       <head>
-        <title>XML Sitemap — Lancerstudio Engineering Solutions</title>
+        <title>XML Sitemap — Lancersstudio Engineering Solutions</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style type="text/css">
@@ -77,7 +77,7 @@
       </head>
       <body>
         <div class="container">
-          <h1>Lancerstudio XML Sitemap</h1>
+          <h1>Lancersstudio XML Sitemap</h1>
           <p class="desc">
             This XML sitemap is processed by search engines like Google and Bing.
           </p>

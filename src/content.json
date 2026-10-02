@@ -1,8 +1,8 @@
 {
-  "_source": "All copy is taken from Lancerstudio_Company_Profile.pdf (LS-CP, 15pp, 2026). Nothing here is invented. Where the profile gives no figure, the site gives no figure.",
+  "_source": "All copy is taken from Lancersstudio_Company_Profile.pdf (LS-CP, 15pp, 2026). Nothing here is invented. Where the profile gives no figure, the site gives no figure.",
   "brand": {
-    "name": "Lancerstudio",
-    "fullName": "Lancerstudio Engineering Solutions",
+    "name": "Lancersstudio",
+    "fullName": "Lancersstudio Engineering Solutions",
     "discipline": "Engineering Solutions",
     "location": "Mumbai, India",
     "proprietor": "Pranit Shantaram Rane",
@@ -16,7 +16,7 @@
       "Mumbai — 400083"
     ],
     "strapline": "Precision in design · Excellence in execution",
-    "legal": "© 2026 Lancerstudio Engineering Solutions"
+    "legal": "© 2026 Lancersstudio Engineering Solutions"
   },
   "hero": {
     "eyebrow": "◆ Facade engineering · Shop drawings & detailing · BIM & 3D coordination",
@@ -59,9 +59,9 @@
     ]
   },
   "about": {
-    "eyebrow": "◆ About Lancerstudio",
+    "eyebrow": "◆ About Lancersstudio",
     "headline": "An engineering partner for facade teams",
-    "body": "Lancerstudio Engineering Solutions is a Mumbai-based engineering and technical support firm focused on facades. We work with architects, facade consultants, contractors and fabricators to develop, detail and coordinate facade systems, from design development through shop drawings and execution support.",
+    "body": "Lancersstudio Engineering Solutions is a Mumbai-based engineering and technical support firm focused on facades. We work with architects, facade consultants, contractors and fabricators to develop, detail and coordinate facade systems, from design development through shop drawings and execution support.",
     "body2": "We do not supply drafting manpower. We bring engineering thinking, technical coordination, precise detailing and BIM support, so every drawing we issue can be fabricated, installed and built.",
     "facts": [
       {
@@ -418,7 +418,7 @@
   },
   "why": {
     "eyebrow": "◆ Why work with us",
-    "headline": "What working with Lancerstudio means",
+    "headline": "What working with Lancersstudio means",
     "items": [
       {
         "index": "01",
@@ -470,7 +470,7 @@
   "precision": {
     "eyebrow": "◆ Engineering precision & technology",
     "quote": "“Precision is not only about drawing accurately. It is about understanding what the drawing needs to achieve.”",
-    "attribution": "Lancerstudio Engineering Solutions",
+    "attribution": "Lancersstudio Engineering Solutions",
     "role": "Mumbai, India",
     "checklist": [
       {
@@ -542,7 +542,7 @@
     ]
   },
   "footer": {
-    "ghostWordmark": "Lancerstudio",
+    "ghostWordmark": "Lancersstudio",
     "image": "https://images.unsplash.com/photo-1470723710355-95304d8aece4?w=2000&q=80&auto=format&fit=crop",
     "contactLabel": "Proprietor",
     "social": [
@@ -558,7 +558,7 @@
     "legalLinks": []
   },
   "nav": {
-    "logoLabel": "Lancerstudio",
+    "logoLabel": "Lancersstudio",
     "home": {
       "label": "Home",
       "href": "#top"
@@ -585,7 +585,7 @@
         "href": "#contact"
       }
     ],
-    "menuTitle": "Lancerstudio — Index",
+    "menuTitle": "Lancersstudio — Index",
     "close": "Close ✕"
   },
   "images": {
