@@ -68,15 +68,28 @@
     <meta name="twitter:image" content="https://www.lancersstudio.com/media/hero-poster.jpg" />
     <meta name="twitter:image:alt" content="Lancersstudio Engineering Solutions — Facade Engineering Mumbai" />
 
-    <!-- Preconnect & Font Loading -->
+    <!-- Preconnect & Non-render-blocking Font Loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500&family=Space+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
     />
-    <!-- The poster is the hero's LCP element; preloaded for optimal Core Web Vitals -->
-    <link rel="preload" as="image" href="/media/hero-poster.jpg" fetchpriority="high" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500&family=Space+Mono:wght@400;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500&family=Space+Mono:wght@400;700&display=swap"
+      />
+    </noscript>
+    <!-- The poster is the hero's LCP element; preloaded as high-efficiency WebP -->
+    <link rel="preload" as="image" href="/media/hero-poster.webp" type="image/webp" fetchpriority="high" />
 
     <!-- Schema.org Rich Structured Data (JSON-LD) -->
     <script type="application/ld+json">

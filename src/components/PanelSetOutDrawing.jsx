@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { prefersReducedMotion } from '../lib/motion.js';
 import styles from './PanelSetOutDrawing.module.css';
 
@@ -34,10 +34,11 @@ export default function PanelSetOutDrawing({ label, dimension }) {
   // still complete rather than blank.
   const [{ progress, entry }, setScroll] = useState({ progress: 1, entry: 0 });
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (prefersReducedMotion()) return undefined;
 
     let latched = 0;
+    let frameId;
     setScroll({ progress: 0, entry: 0 });
 
     const measure = () => {
@@ -53,12 +54,18 @@ export default function PanelSetOutDrawing({ label, dimension }) {
       setScroll({ progress: raw, entry: rect.height / cover });
     };
 
-    measure();
-    window.addEventListener('scroll', measure, { passive: true });
-    window.addEventListener('resize', measure);
+    const schedule = () => {
+      cancelAnimationFrame(frameId);
+      frameId = requestAnimationFrame(measure);
+    };
+
+    schedule();
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
     return () => {
-      window.removeEventListener('scroll', measure);
-      window.removeEventListener('resize', measure);
+      cancelAnimationFrame(frameId);
+      window.removeEventListener('scroll', schedule);
+      window.removeEventListener('resize', schedule);
     };
   }, []);
 

@@ -39,13 +39,23 @@ export default function Hero({ content, brand, media }) {
   return (
     <section id="top" className={styles.hero}>
       <div className={styles.media}>
-        <img
-          className={styles.poster}
-          src={media.poster}
-          alt={media.alt}
-          fetchpriority="high"
-          decoding="async"
-        />
+        <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 768px)"
+            srcSet="/media/hero-poster-mobile.webp"
+          />
+          <source type="image/webp" srcSet="/media/hero-poster.webp" />
+          <img
+            className={styles.poster}
+            src={media.poster}
+            alt={media.alt}
+            fetchpriority="high"
+            decoding="async"
+            width="1280"
+            height="720"
+          />
+        </picture>
         {src && (
           <video
             ref={videoRef}

@@ -160,10 +160,19 @@ export default function FacadeInstall({ content, floors = 26, glass, reflect = 1
       }
     };
 
+    let travel = 0;
+    let sectionTop = 0;
+
+    const measure = () => {
+      if (!section) return;
+      travel = section.offsetHeight - window.innerHeight;
+      sectionTop = section.getBoundingClientRect().top + window.scrollY;
+    };
+
     const draw = () => {
       queued = false;
-      const travel = section.offsetHeight - window.innerHeight;
-      const progress = travel > 0 ? clamp01(-section.getBoundingClientRect().top / travel) : 0;
+      if (travel <= 0) measure();
+      const progress = travel > 0 ? clamp01((window.scrollY - sectionTop) / travel) : 0;
       apply(progress * TOTAL);
     };
 
@@ -173,13 +182,22 @@ export default function FacadeInstall({ content, floors = 26, glass, reflect = 1
       frame = requestAnimationFrame(draw);
     };
 
-    draw();
+    const onResize = () => {
+      measure();
+      onScroll();
+    };
+
+    frame = requestAnimationFrame(() => {
+      measure();
+      draw();
+    });
+
     window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
+    window.addEventListener('resize', onResize, { passive: true });
     return () => {
       cancelAnimationFrame(frame);
       window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', onScroll);
+      window.removeEventListener('resize', onResize);
     };
   }, [m, floors, reflect, steps.length]);
 
