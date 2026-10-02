@@ -4,7 +4,7 @@ export default function NavPill({ content, onOpenMenu }) {
   return (
     <nav className={styles.pill}>
       <a className={styles.brand} href="#top">
-        <img src="/assets/mark-white.png" alt="" />
+        <img src="/assets/mark-white.svg" alt="" />
         {content.logoLabel}
       </a>
       <span className={styles.divider} />

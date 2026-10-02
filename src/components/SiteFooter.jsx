@@ -20,7 +20,7 @@ export default function SiteFooter({ content, brand }) {
 
       <div className={styles.details}>
         <div className={styles.block}>
-          <img className={styles.mark} src="/assets/mark-white.png" alt={brand.fullName} />
+          <img className={styles.mark} src="/assets/mark-white.svg" alt={brand.fullName} />
           <div className={styles.brandName}>{brand.fullName}</div>
           <div className={styles.strapline}>{brand.strapline}</div>
         </div>

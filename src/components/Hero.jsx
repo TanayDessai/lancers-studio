@@ -79,7 +79,7 @@ export default function Hero({ content, brand, media }) {
       <div className={styles.content}>
         <div className={styles.topRow}>
           <div className={styles.wordmark}>
-            <img src="/assets/mark-white.png" alt={brand.fullName} />
+            <img src="/assets/mark-white.svg" alt={brand.fullName} />
             <div className={styles.wordmarkText}>{brand.name}</div>
           </div>
           <div className={styles.meta}>

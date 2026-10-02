@@ -6,7 +6,7 @@ export default function ClosingCTA({ content }) {
     <section id="contact" className={styles.section}>
       <img
         className={styles.mark}
-        src="/assets/mark-ink.png"
+        src="/assets/mark-ink.svg"
         alt=""
         aria-hidden="true"
         loading="lazy"

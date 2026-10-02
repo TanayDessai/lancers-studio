@@ -20,7 +20,7 @@ export default function MenuOverlay({ content, brand, open, onClose, onNavigate 
     <div className={styles.overlay} role="dialog" aria-modal="true" aria-label={content.menuTitle}>
       <div className={styles.top}>
         <span className={styles.title}>
-          <img src="/assets/mark-white.png" alt="" />
+          <img src="/assets/mark-white.svg" alt="" />
           {content.menuTitle}
         </span>
         <button ref={closeRef} type="button" className={styles.close} onClick={onClose}>
