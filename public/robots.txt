@@ -3,5 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap locations
-Sitemap: https://www.lancersstudio.com/sitemap.xml
 Sitemap: https://lancersstudio.com/sitemap.xml
+Sitemap: https://www.lancersstudio.com/sitemap.xml
+Sitemap: https://lancersstudio.com/sitemap_index.xml
+Sitemap: https://www.lancersstudio.com/sitemap_index.xml
