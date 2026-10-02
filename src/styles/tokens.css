@@ -1,0 +1,48 @@
+:root {
+  /* ---- Colour: two tone, no accent hue ---- */
+  --ink: #212325;
+  --charcoal: #0b1012;
+  --cream: #f3f0ec;
+  --paper: #faf9f5;
+  --white: #ffffff;
+
+  --muted-light: rgba(33, 35, 37, 0.6);
+  --muted-dark: rgba(255, 255, 255, 0.6);
+  --hairline: rgba(33, 35, 37, 0.14);
+  --hairline-dark-40: rgba(255, 255, 255, 0.4);
+  --hairline-dark-50: rgba(255, 255, 255, 0.5);
+  --hairline-dark-55: rgba(255, 255, 255, 0.55);
+
+  /* ---- Type ---- */
+  --font-display: 'Schibsted Grotesk', system-ui, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  --fs-hero: clamp(38px, 7.2vw, 108px);
+  --fs-cta: clamp(34px, 5.6vw, 84px);
+  --fs-showroom: clamp(30px, 4.6vw, 66px);
+  --fs-section: clamp(30px, 4.4vw, 62px);
+  --fs-statement: clamp(24px, 3.4vw, 46px);
+  --fs-quote: clamp(23px, 3.2vw, 44px);
+  --fs-about: clamp(19px, 1.9vw, 27px);
+  --fs-body: clamp(15px, 1.2vw, 18px);
+  --fs-menu: clamp(30px, 6vw, 74px);
+  --fs-ghost: clamp(58px, 17vw, 260px);
+
+  /* ---- Spacing ---- */
+  --gutter: clamp(22px, 5vw, 90px);
+  --section-pad: clamp(90px, 14vw, 180px);
+  --stack-gap: clamp(34px, 5vw, 60px);
+  --col-gap: clamp(44px, 7vw, 96px);
+  --tile-gap: clamp(18px, 2.6vw, 40px);
+
+  --max-text: 1180px;
+  --max-wide: 1320px;
+  --max-quote: 1080px;
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ---- Elevation ---- */
+  --radius-pill: 999px;
+  --shadow-pill: 0 18px 44px rgba(11, 16, 18, 0.28);
+}

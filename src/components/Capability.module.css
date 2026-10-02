@@ -1,0 +1,83 @@
+.section {
+  background: var(--cream);
+  padding: var(--section-pad) 0;
+}
+
+.header {
+  padding: 0 var(--gutter);
+  margin-bottom: clamp(46px, 6vw, 80px);
+}
+
+.headerInner {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  display: grid;
+  gap: 26px;
+}
+
+.headline {
+  max-width: 22ch;
+}
+
+.body {
+  margin: 0;
+  max-width: 56ch;
+  font-size: var(--fs-body);
+  line-height: 1.75;
+  color: var(--muted-light);
+}
+
+.gallery {
+  display: flex;
+  gap: clamp(14px, 1.6vw, 24px);
+  overflow-x: auto;
+  padding: 0 var(--gutter) 26px;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card {
+  flex: 0 0 clamp(230px, 24vw, 320px);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: clamp(40px, 7vw, 80px);
+  background: var(--charcoal);
+  padding: clamp(20px, 2vw, 28px);
+  min-height: clamp(180px, 18vw, 230px);
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted-dark);
+}
+
+.label {
+  font-size: clamp(18px, 1.5vw, 24px);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  text-wrap: pretty;
+}
+
+/* The closing card states the position on references rather than implying one. */
+.note {
+  background: transparent;
+  border: 1px dashed rgba(33, 35, 37, 0.4);
+}
+
+.note .label {
+  color: var(--ink);
+}
+
+.noteLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted-light);
+}

@@ -1,0 +1,66 @@
+.section {
+  background: var(--cream);
+  padding: 0 var(--gutter) clamp(120px, 18vw, 220px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Both decorations sit behind the text and take no pointer events. */
+.mark {
+  position: absolute;
+  right: clamp(-40px, -3vw, 0px);
+  bottom: clamp(30px, 6vw, 90px);
+  width: clamp(140px, 18vw, 260px);
+  height: auto;
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+.drawing {
+  position: absolute;
+  right: -60px;
+  bottom: -40px;
+  width: clamp(240px, 34vw, 480px);
+  height: auto;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.inner {
+  max-width: var(--max-text);
+  margin: 0 auto;
+  display: grid;
+  gap: clamp(34px, 4.5vw, 54px);
+  position: relative;
+}
+
+.headline {
+  margin: 0;
+  font-size: var(--fs-cta);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.034em;
+  max-width: 20ch;
+  text-wrap: pretty;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.body {
+  margin: 0;
+  max-width: 54ch;
+  font-size: var(--fs-body);
+  line-height: 1.75;
+  color: var(--muted-light);
+}
+
+.kicker {
+  font-size: var(--fs-about);
+  line-height: 1.4;
+  letter-spacing: -0.016em;
+  max-width: 24ch;
+}

@@ -1,0 +1,191 @@
+/* Pinned like the showroom: the outer section is tall, the inner sticks for
+   one viewport, and the scroll travel in between is the timeline. Height is
+   set inline once the scrub driver is live, so with motion off the section
+   collapses to its natural height instead of leaving four empty screens. */
+.section {
+  --install-viewports: 4; /* viewports of scroll mapped onto the 20s timeline */
+  background: var(--charcoal);
+  position: relative;
+  height: calc(var(--install-viewports) * 100svh);
+}
+
+.pin {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.stage {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: center;
+  gap: clamp(24px, 4vw, 72px);
+  padding: clamp(26px, 5vw, 84px);
+  padding-bottom: clamp(96px, 11vw, 120px); /* keep the nav pill clear */
+}
+
+.col {
+  display: grid;
+  gap: clamp(20px, 2.6vw, 34px);
+  align-content: center;
+}
+
+.headline {
+  margin: 0;
+  font-size: var(--fs-showroom);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -0.032em;
+  color: var(--white);
+  max-width: 20ch;
+  text-wrap: pretty;
+}
+
+.body {
+  margin: 0;
+  max-width: 46ch;
+  font-size: var(--fs-body);
+  line-height: 1.75;
+  color: var(--muted-dark);
+}
+
+/* The storyboard, as a scene rail. The active scene goes solid white. */
+.rail {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(8px, 1vw, 16px);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.32);
+}
+
+.scene {
+  transition: color 0.5s var(--ease);
+}
+
+.scene:not(:last-child)::after {
+  content: ' ·';
+  color: rgba(255, 255, 255, 0.22);
+  margin-left: clamp(8px, 1vw, 16px);
+}
+
+.coordinated {
+  display: grid;
+  gap: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  line-height: 1.9;
+}
+
+.coordinatedLabel {
+  color: rgba(255, 255, 255, 0.32);
+}
+
+.coordinatedList {
+  color: var(--muted-dark);
+}
+
+.scene[data-active='true'] {
+  color: var(--white);
+}
+
+.readout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(14px, 2.4vw, 32px);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 18px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted-dark);
+}
+
+.readout span span {
+  color: var(--white);
+}
+
+.hint {
+  color: rgba(255, 255, 255, 0.32);
+}
+
+.drawing {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  overflow: hidden; /* the Detail push-in is clipped here — it is a camera frame */
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .stage {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(0, 1fr);
+    align-items: start;
+    gap: clamp(18px, 4vw, 30px);
+  }
+
+  .col {
+    align-content: start;
+  }
+
+  .body,
+  .coordinated {
+    display: none; /* the drawing is the payload on a phone */
+  }
+
+  .svg {
+    max-height: 44svh;
+  }
+}
+
+/* With motion off the section is a plain static drawing — no pin, no scrub. */
+@media (prefers-reduced-motion: reduce) {
+  .section {
+    height: auto; /* no scrub, so no scroll runway */
+  }
+
+  .pin {
+    position: relative;
+    height: auto;
+  }
+
+  .hint {
+    display: none;
+  }
+
+  .stage {
+    height: auto;
+    padding-top: var(--section-pad);
+    padding-bottom: var(--section-pad);
+  }
+
+  .svg {
+    height: auto;
+    max-height: none;
+  }
+
+  .scene[data-active='true'] {
+    color: var(--white);
+  }
+}

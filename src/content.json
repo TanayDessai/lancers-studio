@@ -1,0 +1,601 @@
+{
+  "_source": "All copy is taken from Lancerstudio_Company_Profile.pdf (LS-CP, 15pp, 2026). Nothing here is invented. Where the profile gives no figure, the site gives no figure.",
+  "brand": {
+    "name": "Lancerstudio",
+    "fullName": "Lancerstudio Engineering Solutions",
+    "discipline": "Engineering Solutions",
+    "location": "Mumbai, India",
+    "proprietor": "Pranit Shantaram Rane",
+    "email": "lanceruniverse@gmail.com",
+    "phone": "+91 77387 79615",
+    "website": "www.lancersstudio.com",
+    "address": [
+      "501 EWS-1A, Shivmudra Heights CHSL",
+      "MHADA Project, Kannamwar Nagar 2",
+      "Near Asmita College, Vikhroli East",
+      "Mumbai — 400083"
+    ],
+    "strapline": "Precision in design · Excellence in execution",
+    "legal": "© 2026 Lancerstudio Engineering Solutions"
+  },
+  "hero": {
+    "eyebrow": "◆ Facade engineering · Shop drawings & detailing · BIM & 3D coordination",
+    "headline": "We don't just draw the facade. We understand the engineering behind it.",
+    "cta": {
+      "label": "↳ Send us your drawing",
+      "href": "#contact"
+    },
+    "stat": "Engineering, detailing and BIM support for architects, consultants, contractors and fabricators"
+  },
+  "intro": {
+    "eyebrow": "◆ Our engineering philosophy",
+    "statement": "Engineering precision that turns architectural vision into buildable reality.",
+    "body": "Every facade starts as an architectural idea. Between that idea and a finished building sit loads, tolerances, fixing systems, materials, fabrication limits and site conditions. Our work lives in that space.",
+    "steps": [
+      {
+        "label": "Understand",
+        "note": "Read the design intent"
+      },
+      {
+        "label": "Engineer",
+        "note": "Develop the technical solution"
+      },
+      {
+        "label": "Detail",
+        "note": "Draw it to be built"
+      },
+      {
+        "label": "Coordinate",
+        "note": "Align every trade and interface"
+      },
+      {
+        "label": "Solve",
+        "note": "Resolve conflicts early"
+      },
+      {
+        "label": "Support",
+        "note": "Stay with it through execution"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "◆ About Lancerstudio",
+    "headline": "An engineering partner for facade teams",
+    "body": "Lancerstudio Engineering Solutions is a Mumbai-based engineering and technical support firm focused on facades. We work with architects, facade consultants, contractors and fabricators to develop, detail and coordinate facade systems, from design development through shop drawings and execution support.",
+    "body2": "We do not supply drafting manpower. We bring engineering thinking, technical coordination, precise detailing and BIM support, so every drawing we issue can be fabricated, installed and built.",
+    "facts": [
+      {
+        "label": "Based in",
+        "value": "Mumbai, India"
+      },
+      {
+        "label": "Focus",
+        "value": "Facades"
+      },
+      {
+        "label": "Services",
+        "value": "Engineering solutions"
+      }
+    ],
+    "cta": {
+      "label": "↳ What we do",
+      "href": "#services"
+    },
+    "drawingLabel": "Panel set-out study — Grid A/12",
+    "drawingDimension": "3 × 1500 MM MODULE"
+  },
+  "install": {
+    "eyebrow": "◆ Engineering workflow",
+    "headline": "From architectural vision to buildable facade",
+    "body": "Every facade element has to satisfy several requirements at once. Our workflow brings them into the same drawing before anything is fabricated.",
+    "stageLabel": "Stage",
+    "hint": "Scroll to run the sequence",
+    "workflow": [
+      "Architectural vision",
+      "Technical understanding",
+      "Engineering development",
+      "BIM / 3D coordination",
+      "Shop drawings & detailing",
+      "Fabrication / execution support",
+      "Buildable facade"
+    ],
+    "coordinated": {
+      "label": "Coordinated at every step",
+      "items": [
+        "Architectural intent",
+        "Structural requirements",
+        "Materials",
+        "Fixing systems",
+        "Fabrication limitations",
+        "Installation requirements",
+        "Site conditions"
+      ]
+    }
+  },
+  "services": {
+    "eyebrow": "◆ What we do",
+    "headline": "Five ways we support your facade",
+    "footnote": "One technical partner, from the first question to the last execution drawing.",
+    "tiles": [
+      {
+        "index": "01",
+        "label": "Facade engineering & technical support",
+        "body": "Solving the technical questions behind the design.",
+        "detail": "We review architectural intent against structure, materials and fabrication, and develop details that work.",
+        "scope": [
+          "Facade technical solutions",
+          "Design development support",
+          "Constructability review",
+          "Technical coordination",
+          "Detail development",
+          "Engineering problem solving"
+        ],
+        "marginTop": "0",
+        "depth": 0.09,
+        "image": "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?w=1200&q=75&auto=format&fit=crop",
+        "alt": "Curtain wall glazing"
+      },
+      {
+        "index": "02",
+        "label": "Shop drawings & detailing",
+        "body": "Fabrication-ready drawings for every facade system.",
+        "detail": "Profiles, dimensions, fixings, tolerances and sequences: the information the workshop and the site need, checked against the design and the system.",
+        "scope": [
+          "Facade shop drawings",
+          "Curtain wall detailing",
+          "Structural glazing",
+          "Unitized & semi-unitized systems",
+          "Windows and doors",
+          "Louvers",
+          "ACP / aluminium cladding",
+          "Expanded mesh",
+          "Perforated sheets",
+          "Canopies & architectural metalwork",
+          "Connection and fixing details"
+        ],
+        "marginTop": "clamp(40px, 9vw, 120px)",
+        "depth": 0.15,
+        "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=1200&q=75&auto=format&fit=crop",
+        "alt": "Structural glazing"
+      },
+      {
+        "index": "03",
+        "label": "BIM & 3D modelling",
+        "body": "Coordinated models that find problems before site does.",
+        "detail": "One facade model drives coordination, drawings and quantities.",
+        "scope": [
+          "Revit facade BIM",
+          "LOD-based modelling",
+          "Parametric facade development",
+          "Revit families",
+          "Coordination models",
+          "Clash & constructability checks",
+          "Rhino / Grasshopper",
+          "SketchUp modelling"
+        ],
+        "marginTop": "clamp(16px, 3vw, 48px)",
+        "depth": 0.05,
+        "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1200&q=75&auto=format&fit=crop",
+        "alt": "Cladding"
+      },
+      {
+        "index": "04",
+        "label": "Material & quantity support",
+        "body": "Take-offs and BOQ support checked against the drawings.",
+        "detail": "Quantities read straight from the coordinated model and the issued drawings.",
+        "scope": [
+          "Material take-off",
+          "Profile quantity",
+          "Glass quantity",
+          "Aluminium quantity",
+          "Accessories & hardware",
+          "BOQ support",
+          "Drawing-based quantity checking"
+        ],
+        "marginTop": "clamp(60px, 13vw, 176px)",
+        "depth": 0.12,
+        "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=75&auto=format&fit=crop",
+        "alt": "Facade consulting"
+      },
+      {
+        "index": "05",
+        "label": "Technical problem solving",
+        "body": "Practical answers to interface and site issues.",
+        "detail": "Most problems appear at interfaces. We find them early and propose practical solutions.",
+        "scope": [
+          "Interface resolution",
+          "Site condition review",
+          "Fabrication feasibility",
+          "Remedial detailing"
+        ],
+        "marginTop": "clamp(24px, 5vw, 80px)",
+        "depth": 0.07,
+        "image": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?w=1200&q=75&auto=format&fit=crop",
+        "alt": "Facade detail"
+      }
+    ]
+  },
+  "systems": {
+    "eyebrow": "◆ Typical facade systems",
+    "headline": "Systems we work with",
+    "items": [
+      {
+        "label": "Stick curtain wall",
+        "body": "Mullions and transoms assembled on site",
+        "glyph": "grid"
+      },
+      {
+        "label": "Unitized systems",
+        "body": "Unitized and semi-unitized panels, stack joints",
+        "glyph": "unit"
+      },
+      {
+        "label": "Structural glazing",
+        "body": "Silicone-bonded glass, concealed frame",
+        "glyph": "glazing"
+      },
+      {
+        "label": "Windows & doors",
+        "body": "Aluminium openings and their interfaces",
+        "glyph": "window"
+      },
+      {
+        "label": "Louvers",
+        "body": "Fixed and operable screening blades",
+        "glyph": "louver"
+      },
+      {
+        "label": "ACP cladding",
+        "body": "ACP and aluminium panels on subframes",
+        "glyph": "acp"
+      },
+      {
+        "label": "Mesh & perforated",
+        "body": "Expanded mesh and perforated sheet skins",
+        "glyph": "mesh"
+      },
+      {
+        "label": "Canopies",
+        "body": "Canopies and architectural metalwork",
+        "glyph": "canopy"
+      }
+    ]
+  },
+  "problems": {
+    "eyebrow": "◆ Technical problem solving",
+    "headline": "Where facades usually go wrong",
+    "body": "Most problems appear at interfaces. We find them early and propose practical solutions.",
+    "items": [
+      {
+        "code": "P-01",
+        "label": "Facade fixing conflicts"
+      },
+      {
+        "code": "P-02",
+        "label": "Mullion / transom coordination"
+      },
+      {
+        "code": "P-03",
+        "label": "Slab edge conditions"
+      },
+      {
+        "code": "P-04",
+        "label": "Bracket and anchor coordination"
+      },
+      {
+        "code": "P-05",
+        "label": "Glass and panel interfaces"
+      },
+      {
+        "code": "P-06",
+        "label": "Sealant and joint issues"
+      },
+      {
+        "code": "P-07",
+        "label": "Structural interface"
+      },
+      {
+        "code": "P-08",
+        "label": "Architectural vs structural conflicts"
+      },
+      {
+        "code": "P-09",
+        "label": "Site condition vs drawing mismatch"
+      },
+      {
+        "code": "P-10",
+        "label": "Fabrication feasibility"
+      },
+      {
+        "code": "P-11",
+        "label": "Missing technical information"
+      }
+    ],
+    "callout": {
+      "label": "Problem → solution",
+      "text": "Send us your issue. We will propose a fix.",
+      "href": "#contact"
+    },
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=2000&q=80&auto=format&fit=crop"
+  },
+  "capability": {
+    "eyebrow": "◆ Project & capability showcase",
+    "headline": "Capability across building types",
+    "body": "Project names, locations and scopes are shown only with client permission.",
+    "items": [
+      {
+        "code": "T-01",
+        "label": "Commercial buildings"
+      },
+      {
+        "code": "T-02",
+        "label": "Residential towers"
+      },
+      {
+        "code": "T-03",
+        "label": "Corporate buildings"
+      },
+      {
+        "code": "T-04",
+        "label": "Hotels"
+      },
+      {
+        "code": "T-05",
+        "label": "Hospitals"
+      },
+      {
+        "code": "T-06",
+        "label": "Educational buildings"
+      },
+      {
+        "code": "T-07",
+        "label": "Retail"
+      },
+      {
+        "code": "T-08",
+        "label": "Mixed-use developments"
+      },
+      {
+        "code": "T-09",
+        "label": "Architectural feature facades"
+      },
+      {
+        "code": "T-10",
+        "label": "Canopies"
+      },
+      {
+        "code": "T-11",
+        "label": "Complex / parametric facades"
+      }
+    ],
+    "note": {
+      "label": "Project references",
+      "value": "Available on request"
+    }
+  },
+  "clients": {
+    "eyebrow": "◆ Industries we support",
+    "headline": "Who we work with",
+    "body": "We fit into your team where you need technical depth, from early design to site.",
+    "columns": {
+      "client": "Client",
+      "support": "How we typically support them"
+    },
+    "items": [
+      {
+        "client": "Architects",
+        "support": "Facade design development, feasibility, BIM models"
+      },
+      {
+        "client": "Facade consultants",
+        "support": "Detail development, drawings, coordination"
+      },
+      {
+        "client": "Facade contractors",
+        "support": "Shop drawings, system detailing, quantities"
+      },
+      {
+        "client": "Fabricators",
+        "support": "Fabrication-ready details, profile and material take-offs"
+      },
+      {
+        "client": "Developers",
+        "support": "Technical review and coordination support"
+      },
+      {
+        "client": "Main contractors",
+        "support": "Interface coordination, site issue resolution"
+      },
+      {
+        "client": "Engineering consultants",
+        "support": "Modelling and detailing support"
+      },
+      {
+        "client": "Project management teams",
+        "support": "Technical clarity for decisions and tracking"
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "◆ Why work with us",
+    "headline": "What working with Lancerstudio means",
+    "items": [
+      {
+        "index": "01",
+        "label": "Engineering-focused",
+        "body": "We start from how the facade works, not from a drawing template."
+      },
+      {
+        "index": "02",
+        "label": "Facade industry experience",
+        "body": "Our team works with facade systems every day."
+      },
+      {
+        "index": "03",
+        "label": "Technical detailing",
+        "body": "Details developed to be fabricated and installed."
+      },
+      {
+        "index": "04",
+        "label": "BIM-driven coordination",
+        "body": "Conflicts found in the model, not on site."
+      },
+      {
+        "index": "05",
+        "label": "Fabrication sense",
+        "body": "Drawings that respect workshop and site limits."
+      },
+      {
+        "index": "06",
+        "label": "Flexible support",
+        "body": "From a single detail to a full drawing package."
+      },
+      {
+        "index": "07",
+        "label": "Attention to precision",
+        "body": "Dimensions, tolerances and interfaces checked."
+      },
+      {
+        "index": "08",
+        "label": "Problem-solving mindset",
+        "body": "We bring options, not only questions."
+      },
+      {
+        "index": "09",
+        "label": "Concept to execution",
+        "body": "Support from design development to execution documents."
+      }
+    ]
+  },
+  "precision": {
+    "eyebrow": "◆ Engineering precision & technology",
+    "quote": "“Precision is not only about drawing accurately. It is about understanding what the drawing needs to achieve.”",
+    "attribution": "Lancerstudio Engineering Solutions",
+    "role": "Mumbai, India",
+    "checklist": [
+      {
+        "index": "01",
+        "label": "Correct dimensions"
+      },
+      {
+        "index": "02",
+        "label": "Correct loads and assumptions"
+      },
+      {
+        "index": "03",
+        "label": "Correct fixing"
+      },
+      {
+        "index": "04",
+        "label": "Correct interfaces"
+      },
+      {
+        "index": "05",
+        "label": "Correct material selection"
+      },
+      {
+        "index": "06",
+        "label": "Correct tolerances"
+      },
+      {
+        "index": "07",
+        "label": "Correct coordination"
+      },
+      {
+        "index": "08",
+        "label": "Correct fabrication information"
+      },
+      {
+        "index": "09",
+        "label": "Correct execution information"
+      }
+    ],
+    "tools": {
+      "label": "Tools we use to deliver precision",
+      "items": [
+        "Autodesk Revit",
+        "AutoCAD",
+        "Rhino",
+        "Grasshopper",
+        "SketchUp",
+        "SolidWorks",
+        "Inventor",
+        "Lumion",
+        "BIM coordination platforms"
+      ]
+    }
+  },
+  "cta": {
+    "eyebrow": "◆ Contact",
+    "headline": "Have a facade that needs to be engineered, detailed or coordinated?",
+    "body": "Send us your drawings, model or problem. We will review it and tell you how we can support your team, from technical development to execution documentation.",
+    "kicker": "Let's make it buildable.",
+    "buttons": [
+      {
+        "label": "↳ Email the studio",
+        "href": "mailto:lanceruniverse@gmail.com"
+      },
+      {
+        "label": "↳ Call +91 77387 79615",
+        "href": "tel:+917738779615"
+      }
+    ]
+  },
+  "footer": {
+    "ghostWordmark": "Lancerstudio",
+    "image": "https://images.unsplash.com/photo-1470723710355-95304d8aece4?w=2000&q=80&auto=format&fit=crop",
+    "contactLabel": "Proprietor",
+    "social": [
+      {
+        "label": "lanceruniverse@gmail.com",
+        "href": "mailto:lanceruniverse@gmail.com"
+      },
+      {
+        "label": "+91 77387 79615",
+        "href": "tel:+917738779615"
+      }
+    ],
+    "legalLinks": []
+  },
+  "nav": {
+    "logoLabel": "Lancerstudio",
+    "home": {
+      "label": "Home",
+      "href": "#top"
+    },
+    "menu": [
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Systems",
+        "href": "#systems"
+      },
+      {
+        "label": "Capability",
+        "href": "#capability"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "menuTitle": "Lancerstudio — Index",
+    "close": "Close ✕"
+  },
+  "images": {
+    "note": "Photography is Unsplash placeholder — replace with the studio's own project photography where client permission allows. Keep crops: tiles 3/4.2, covers full-bleed.",
+    "heroMedia": {
+      "poster": "/media/hero-poster.jpg",
+      "desktop": "/media/hero-desktop.mp4",
+      "mobile": "/media/hero-mobile.mp4",
+      "alt": "Glass curtain wall tower",
+      "note": "Client-supplied stock footage, re-encoded to H.264 and ping-ponged to a seamless 14s loop."
+    }
+  }
+}

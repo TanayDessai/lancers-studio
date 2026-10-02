@@ -1,0 +1,225 @@
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--cream);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 400;
+  color: var(--ink);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  opacity: 0.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* ---------- Shared primitives ---------- */
+
+/* Space Mono label: every eyebrow, meta line, caption, button */
+.mono {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--muted-light);
+}
+
+.eyebrowOnDark {
+  color: var(--muted-dark);
+}
+
+/* Headings — weight 400, sentence case, negative tracking */
+.h2Section {
+  margin: 0;
+  font-size: var(--fs-section);
+  font-weight: 400;
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+  text-wrap: pretty;
+}
+
+/* Primary button — square, charcoal fill, ↳ prefix supplied by copy */
+.btn {
+  display: inline-block;
+  background: var(--charcoal);
+  color: var(--white);
+  padding: 17px 30px;
+  border-radius: 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: background 0.4s var(--ease);
+}
+
+.btn:hover {
+  background: var(--ink);
+  opacity: 1;
+}
+
+/* Text link — underlined hairline, ↳ prefix supplied by copy */
+.textLink {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--white);
+  border-bottom: 1px solid var(--hairline-dark-55);
+  padding-bottom: 6px;
+}
+
+/* Hide scrollbar but keep wheel / drag scrolling */
+.noScrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.noScrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------- Reveal keyframes ---------- */
+
+@keyframes lsRise {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes lsFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lsWipe {
+  from {
+    opacity: 0;
+    transform: translateY(46px) scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes lsZoom {
+  from {
+    transform: scale(1.16);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes lsPanel {
+  from {
+    opacity: 0;
+    transform: translate(-14px, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes lsDraw {
+  from {
+    stroke-dashoffset: 900;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Reveal wrapper. Content is visible by default; the animation only ever
+   plays from an is-armed state that JS (IntersectionObserver) sets, so a
+   failure of the mechanism leaves everything readable. */
+.reveal {
+  opacity: 1;
+}
+
+.reveal[data-armed='true'] {
+  opacity: 0;
+}
+
+.reveal[data-armed='true'][data-in='true'] {
+  opacity: 1;
+}
+
+.reveal[data-armed='true'][data-in='true'][data-variant='rise'] {
+  animation: lsRise 1.3s var(--ease) both;
+}
+
+.reveal[data-armed='true'][data-in='true'][data-variant='fade'] {
+  animation: lsFade 1.3s ease both;
+}
+
+.reveal[data-armed='true'][data-in='true'][data-variant='wipe'] {
+  animation: lsWipe 1.6s var(--ease) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .reveal,
+  .reveal[data-armed='true'] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ---------- Focus ---------- */
+/* Keyboard focus is visible but on-brand; pointer focus stays quiet. */
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid var(--ink);
+  outline-offset: 6px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}

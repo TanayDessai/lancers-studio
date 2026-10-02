@@ -1,0 +1,48 @@
+.section {
+  background: var(--cream);
+  padding: var(--section-pad) var(--gutter) clamp(70px, 12vw, 150px);
+}
+
+.inner {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  gap: 26px;
+  margin-bottom: clamp(50px, 7vw, 96px);
+}
+
+.headline {
+  max-width: 22ch;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--tile-gap);
+  align-items: start;
+}
+
+.footnote {
+  margin: clamp(44px, 6vw, 72px) 0 0;
+  font-size: var(--fs-about);
+  line-height: 1.4;
+  letter-spacing: -0.014em;
+  max-width: 34ch;
+  text-wrap: pretty;
+}
+
+/* Five tiles need more room than four; drop to a 3-up before stacking. */
+@media (max-width: 1180px) {
+  .tiles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+}

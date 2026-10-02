@@ -1,0 +1,149 @@
+.hero {
+  position: relative;
+  height: 100svh;
+  min-height: min(620px, 100svh);
+  overflow: hidden;
+  background: var(--charcoal);
+}
+
+/* Poster and video are zoomed as one layer, so the 2.6s push-in is identical
+   whether the video loads or not. */
+.media {
+  position: absolute;
+  inset: 0;
+  animation: lsZoom 2.6s var(--ease) both;
+}
+
+.poster,
+.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video {
+  opacity: 0;
+  transition: opacity 0.9s var(--ease);
+}
+
+.video[data-playing='true'] {
+  opacity: 1;
+}
+
+.scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 16, 18, 0.62) 0%,
+    rgba(11, 16, 18, 0.18) 42%,
+    rgba(11, 16, 18, 0.78) 100%
+  );
+}
+
+.content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(22px, 4vw, 54px);
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  animation: lsFade 1.6s ease 0.2s both;
+}
+
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wordmark img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.wordmarkText {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted-dark);
+  text-align: right;
+  line-height: 2;
+}
+
+.bottom {
+  display: grid;
+  gap: clamp(28px, 4vw, 44px);
+  max-width: var(--max-text);
+}
+
+.eyebrow {
+  animation: lsRise 1.4s var(--ease) 0.5s both;
+}
+
+/* The muted-on-dark token assumes a dark backdrop. These two labels sit in the
+   band where the scrim is lightest (the 42% stop at .18) and over the brightest
+   part of the footage, so the hero raises them to stay legible. Descendant
+   selectors so they beat the global .eyebrowOnDark regardless of sheet order.
+   Measured: eyebrow 2.9:1 at .6 -> 5.1:1 at full white. */
+.bottom .eyebrow {
+  color: var(--white);
+}
+
+.topRow .meta {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--fs-hero);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  color: var(--white);
+  text-wrap: pretty;
+  animation: lsWipe 1.6s var(--ease) 0.35s both;
+}
+
+.ctaRow {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 4vw, 48px);
+  flex-wrap: wrap;
+  animation: lsRise 1.4s var(--ease) 0.7s both;
+}
+
+.stat {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted-dark);
+  max-width: 340px;
+  line-height: 1.9;
+}
+
+.ctaRow a:focus-visible {
+  outline: 1px solid var(--hairline-dark-50);
+  outline-offset: 8px;
+}
