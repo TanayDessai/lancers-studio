@@ -2,6 +2,6 @@
 User-agent: *
 Allow: /
 
-# Host & Sitemap location
-Host: https://www.lancersstudio.com
+# Sitemap locations
 Sitemap: https://www.lancersstudio.com/sitemap.xml
+Sitemap: https://lancersstudio.com/sitemap.xml
